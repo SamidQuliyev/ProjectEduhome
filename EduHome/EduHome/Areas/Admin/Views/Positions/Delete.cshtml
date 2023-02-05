@@ -1,0 +1,20 @@
+﻿@model Position
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="row">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Delete @Model.Name</h4>
+                <div class="text-danger">Are U sure delete this service</div>
+                <form method="post" class="forms-sample mt-3">
+                <button type="submit" class="btn btn-primary me-2">Yes</button>
+                    <a asp-action="Index" class="btn btn-light">Cancel</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,35 @@
+﻿@model SearchVM
+@foreach (Courses item in Model.Courses)
+
+{
+    <li style="display:flex;justify-content:space-between;padding:10px">
+
+        <img src="~/img/course/@item.Image" style="width:30px;height:30px;object-fit:cover" />
+        <a>     @item.Title  </a>
+
+
+    </li>
+}
+
+@foreach (Teacher item in Model.Teachers)
+
+{
+    <li style="display:flex;justify-content:space-between;padding:10px">
+
+        <img src="~/img/teacher/@item.Image" style="width:30px;height:30px;object-fit:cover" />
+        <a>     @item.FullName  </a>
+
+
+    </li>
+}
+@foreach (Blogs item in Model.Blogs)
+
+{
+    <li style="display:flex;justify-content:space-between;padding:10px">
+
+        <img src="~/img/blog/@item.Image" style="width:30px;height:30px;object-fit:cover" />
+        <a>     @item.Title  </a>
+
+
+    </li>
+}

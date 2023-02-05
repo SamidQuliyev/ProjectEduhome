@@ -1,0 +1,23 @@
+﻿@model Slider
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="row">
+
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-center">
+                    <img class="my-3" style="object-fit : cover; width: 280px; height: 140px !important;" src="~/img/slider/@Model.Image" />
+                </div>
+
+
+                <h4>Slider Title: @Model.Title</h4>
+                <div>Slider Subtitle: @Model.Subtitle</div>
+                <a class="btn btn-primary my-3" asp-action="Index">Go Back</a>
+            </div>
+        </div>
+    </div>
+</div>
+

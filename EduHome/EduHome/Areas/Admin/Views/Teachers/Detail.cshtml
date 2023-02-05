@@ -1,0 +1,23 @@
+﻿@model Teacher
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="row">
+
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-center">
+                    <img class="my-3" style="object-fit : contain; width: 300px; height: 180px !important;" src="~/img/teacher/@Model.Image" />
+                </div>
+
+
+                <h4>Teacher FullName: @Model.FullName</h4>
+                <h4>Teacher Position: @Model.Position.Name</h4>
+
+                <a class="btn btn-primary my-3" asp-action="Index">Go Back</a>
+            </div>
+        </div>
+    </div>
+</div>

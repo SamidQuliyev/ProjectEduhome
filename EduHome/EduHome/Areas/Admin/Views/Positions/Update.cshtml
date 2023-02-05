@@ -1,0 +1,29 @@
+﻿@model Position
+<div class="row">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Update Position</h4>
+
+                <form method="post" class="forms-sample">
+                    <div class="form-group">
+                        <label asp-for="Name"></label>
+                        <input asp-for="Name" class="form-control">
+                        <span asp-validation-for="Name" class="alert-danger"></span>
+
+                    </div>
+                
+                    <button type="submit" class="btn btn-primary me-2">Submit</button>
+                    <a asp-action="Index" class="btn btn-light">Cancel</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+
+}
+
+

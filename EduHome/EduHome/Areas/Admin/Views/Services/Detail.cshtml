@@ -1,0 +1,19 @@
+﻿@model Service
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="row">
+
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+
+                <h4>Service Name: @Model.Name</h4>
+                <div>Service Description: @Model.Description</div>
+                <a class="btn btn-primary my-3" asp-action="Index">Go Back</a>
+            </div>
+        </div>
+    </div>
+</div>
+
